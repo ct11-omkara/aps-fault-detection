@@ -18,7 +18,11 @@ if __name__ == "__main__":
     df.reset_index(drop=True, inplace=True)
     json_record = list(json.loads(df.T.to_json()).values())
 
+<<<<<<< HEAD
     print("End")
+=======
+    print("End...111")
+>>>>>>> a77728e8ea0403da1678eab14ae230e692faa2d9
     
     #insert converted json record to monga DB
     client[DATABASE_NAME][COLLECTION_NAME].insert_many(json_record)
