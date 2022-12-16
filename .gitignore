@@ -106,7 +106,6 @@ celerybeat.pid
 
 # Environments
 .env
-.ctp
 .venv
 env/
 venv/
